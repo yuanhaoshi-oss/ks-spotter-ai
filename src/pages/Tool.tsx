@@ -159,7 +159,12 @@ const Tool = () => {
                   id="file-upload"
                 />
                 <label htmlFor="file-upload">
-                  <Button className="shadow-medium cursor-pointer">
+                  <Button 
+                    variant="default" 
+                    size="lg"
+                    className="bg-gradient-medical text-primary-foreground hover:opacity-90 transition-opacity cursor-pointer"
+                  >
+                    <Upload className="w-4 h-4 mr-2" />
                     Choose Image File
                   </Button>
                 </label>
@@ -197,7 +202,13 @@ const Tool = () => {
                     <div className="space-y-4">
                       <p className="text-muted-foreground">Ready to analyze the uploaded image.</p>
                       <div className="space-y-2">
-                        <Button onClick={handleAnalyze} className="w-full shadow-medium">
+                        <Button 
+                          onClick={handleAnalyze} 
+                          variant="default"
+                          size="lg"
+                          className="w-full bg-gradient-medical text-primary-foreground hover:opacity-90 transition-opacity"
+                        >
+                          <Camera className="w-4 h-4 mr-2" />
                           Start AI Analysis
                         </Button>
                         <Button variant="outline" onClick={resetTool} className="w-full">
