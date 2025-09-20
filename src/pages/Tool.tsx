@@ -158,16 +158,14 @@ const Tool = () => {
                   className="hidden"
                   id="file-upload"
                 />
-                <label htmlFor="file-upload">
-                  <Button 
-                    variant="default" 
-                    size="lg"
-                    className="bg-gradient-medical text-primary-foreground hover:opacity-90 transition-opacity cursor-pointer"
-                  >
-                    <Upload className="w-4 h-4 mr-2" />
-                    Choose Image File
-                  </Button>
-                </label>
+                <Button 
+                  onClick={() => document.getElementById('file-upload')?.click()}
+                  size="lg"
+                  className="bg-gradient-medical text-primary-foreground hover:opacity-90 transition-opacity cursor-pointer"
+                >
+                  <Upload className="w-4 h-4 mr-2" />
+                  Choose Image File
+                </Button>
                 
                 <p className="text-sm text-muted-foreground mt-4">
                   Supported formats: JPG, PNG, WEBP • Max size: 5MB

@@ -36,7 +36,7 @@ const Home = () => {
                 </Button>
               </Link>
               <Link to="/tool">
-                <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary shadow-medium">
+                <Button size="lg" className="bg-gradient-medical text-primary-foreground hover:opacity-90 transition-opacity shadow-medium">
                   <Camera className="w-5 h-5 mr-2" />
                   Try AI Tool
                   <ArrowRight className="w-4 h-4 ml-2" />
